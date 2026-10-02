@@ -1,0 +1,30 @@
+{
+  "balances": {
+    "alice": {
+      "base": 100,
+      "quote": 0
+    },
+    "bob": {
+      "base": 0,
+      "quote": 10000
+    }
+  },
+  "events": [
+    {
+      "type": "submit",
+      "id": "ask-1",
+      "owner": "alice",
+      "side": "sell",
+      "price": 100,
+      "quantity": 50
+    },
+    {
+      "type": "submit",
+      "id": "bid-1",
+      "owner": "bob",
+      "side": "buy",
+      "price": 110,
+      "quantity": 30
+    }
+  ]
+}

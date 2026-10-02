@@ -1,0 +1,51 @@
+{
+  "balances": {
+    "alice": {
+      "base": 70,
+      "quote": 3000
+    },
+    "bob": {
+      "base": 30,
+      "quote": 7000
+    }
+  },
+  "conserved_totals": {
+    "base": 100,
+    "quote": 10000
+  },
+  "events": [
+    {
+      "filled": 0,
+      "id": "ask-1",
+      "resting": 50,
+      "status": "partial_or_open"
+    },
+    {
+      "filled": 30,
+      "id": "bid-1",
+      "resting": 0,
+      "status": "filled"
+    }
+  ],
+  "orders": [
+    {
+      "id": "ask-1",
+      "owner": "alice",
+      "price": 100,
+      "remaining": 20,
+      "sequence": 1,
+      "side": "sell"
+    }
+  ],
+  "trade_count": 1,
+  "trades": [
+    {
+      "buyer": "bob",
+      "maker": "ask-1",
+      "price": 100,
+      "quantity": 30,
+      "seller": "alice",
+      "taker": "bid-1"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "crypto-orderbook-exchange"
+version = "0.1.0"
+description = "Replay collateralized limit orders, matching, cancellation and settlement with conservation checks."
+requires-python = ">=3.11"
+license = "MIT"
+
+[project.scripts]
+crypto-orderbook-exchange = "cryptolab:main"
+
+[tool.setuptools.packages.find]
+include = ["cryptolab*"]
+
+[tool.setuptools.package-data]
+cryptolab = ["web/*"]
